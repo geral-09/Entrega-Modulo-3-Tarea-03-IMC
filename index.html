@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Select Personalizado</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="wrap">
+		<div class="info">
+			<h1>Calculadora de IMC </h1>
+			<h2>Geraldine</h2>
+			<p>Por: <a href="">Geraldine</a> - <a href="">Git</a></p>
+		</div>
+		<form action="" class="formulario">
+			<div class="radio">
+				<h2>Genero</h2>
+                <i><img src="img/male.svg" alt=""> </i>
+				<input type="radio" name="sexo" id="hombre">
+				<label for="hombre">Hombre</label>
+
+                <i><img src="img/female.svg" alt=""> </i>
+				<input type="radio" name="sexo" id="mujer">
+				<label  for="mujer">Mujer</label>
+
+			
+				
+				<label  style="margin-left: 4%;" for="">Peso </label>
+
+                <br>
+                <br>
+                <div class= "Datos"> 
+					<label  style="margin-left: 4%;" for="">Nombre </label>
+                    <input name="nombre" id="nombre" type="text"> 
+
+                    <label  style="margin-left: 4%;" for="">Peso </label>
+                    <input  name= "peso" id="peso"  type="number"> 
+					
+                    <label style="margin-left: 5%;" for="">Altura </label > 
+                    <input  name= "altura" id="altura" type="number">
+					
+                    <label style="margin-left: 6%;" for="">Edad</label > 
+                    <input name= "edad" id="edad" type="number">
+                </div>
+         
+		
+
+			</div>
+		
+			<div class="checkbox">
+				<h2>Origen :D</h2>
+				<input type="checkbox" name="checkbox" id="checkbox1">
+				<label for="checkbox1">Colombiano 1</label>
+		
+				<input type="checkbox" name="checkbox" id="checkbox2">
+				<label for="checkbox2">Extrengero </label>
+			</div>
+		</form>
+	</div>
+
+	<button onclick= "calcularIMC()">Calcular IMC</button>
+	<p id="resultado"></p>
+
+    
+</body>
+<script src="js/js.js"></script>
+</html>
